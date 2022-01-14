@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz Puzzle</title>
+</head>
+<body>
+    <script>
+        //start with js script tag
+        var x = 80;
+        //declare variable value, this is  not let type, so value can be redeclared
+
+        for (i = 1; i <= x; i ++){
+            //loop all elements from i (1) to x (80) using for loop
+
+            if (((i % 3) == 0) && ((i % 5) == 0))
+            //if the remainder of i divided by 3 is 0 and the remainder of i divided by 5 is 0
+            // also can be written as if ((i % 15) == 0)
+               console.log("Fizz Buzz ");
+               //write Fizz Buzz and space on the HTML document
+            else if ( (i % 3) == 0)
+            //else if the remainder of i divided by 3 is 0
+                console.log("Fizz  ");
+                //write Fizz and space on the HTML document
+            else if ( (i % 5) == 0)
+            //else if the remainder of i divided by 5 is 0
+                console.log("Buzz ");
+                //write Fizz and space on the HTML document
+            else 
+            //any case that it does not fit in the above scenarios
+                console.log( i , " ");
+
+        }
+    </script>
+</body>
+</html>
