@@ -9,16 +9,14 @@ count = 0;
 
 for (let i = 0; i < ransomNote; i++){
     // for loop looking for each character in ransomNote from 0 to its last element
-    for(let j = 0; j < magazine; j++){
-        // for loop looking for each character in ransomNote from 0 to its last element
-        if (ransomNote[i] != magazine[j]){
+        if (ransomNote[i] != magazine[i]){
             //if the letter from ransomnote and magazine do not match
             count = 0;
             //count will remain 0
             break;
             //break the loop
         }
-        else if (ransomNote[i] == magazine [j]){
+        else if (ransomNote[i] == magazine [i]){
             //elsse if the letter from ransomnote and magazine do match
             count += 1;
             //count will increase by 1
@@ -39,3 +37,6 @@ else {
     return false;
     //return false since it cannot be used to construct a note.
 }
+
+
+//One thing i want to mention, the loop might have problem, since the two strings have different lengths.
